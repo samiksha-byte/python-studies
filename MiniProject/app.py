@@ -2,21 +2,25 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-chat_responses = {
-    "hello": "Hi! Welcome to Random Chat Project.",
-    "how are you": "I am doing great.",
-    "python": "Python is easy and powerful.",
-    "college": "College life is fun and educational.",
-    "bye": "Goodbye! Have a nice day."
-}
-
 def get_reply(message):
-    message = message.lower()
 
-    if message in chat_responses:
-        return chat_responses[message]
+    responses = {
+        "hello": "Hi! Welcome to Campus Mood Bot.",
+        "stressed": "Take a short break and come back stronger.",
+        "tired": "Get some rest and stay hydrated.",
+        "exam": "Revise important topics and practice previous questions.",
+        "placement": "Practice coding and aptitude every day.",
+        "project": "Break your project into smaller tasks.",
+        "python": "Python becomes easier with regular practice.",
+        "happy": "That's great! Keep smiling.",
+        "sad": "Don't give up. Better days are coming.",
+        "bye": "Goodbye! Have a productive day."
+    }
 
-    return "Sorry, I don't understand that."
+    return responses.get(
+        message.lower(),
+        "Sorry, I don't have an answer for that."
+    )
 
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -24,8 +28,8 @@ def home():
     reply = ""
 
     if request.method == "POST":
-        user_message = request.form["message"]
-        reply = get_reply(user_message)
+        message = request.form["message"]
+        reply = get_reply(message)
 
     return render_template("index.html", reply=reply)
 
