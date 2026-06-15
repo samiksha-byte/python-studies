@@ -1,3 +1,24 @@
-Campus Mood Bot
+# Campus Mood Bot
 
-A simple Flask-based chatbot that helps students with moods and academic topics such as exams, placements, projects, stress, and motivation.
+## Description
+Campus Mood Bot is a Flask-based chatbot designed for students.
+
+## Features
+- Student friendly chatbot
+- Answers questions about exams, placements and projects
+- Provides motivational responses
+- Uses Python dictionaries
+- Uses Flask and HTML
+
+## Technologies
+- Python
+- Flask
+- HTML
+- CSS
+
+## Concepts Used
+- Functions
+- Dictionaries
+- Conditional Statements
+- Flask Routes
+- User Input
