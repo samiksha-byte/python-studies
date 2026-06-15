@@ -5,27 +5,88 @@
 </head>
 <body>
 
-    <h2>Campus Mood Bot</h2>
+    <h1>🎓 Campus Mood Bot</h1>
+    <hr>
 
-    <form method="POST">
-        <input type="text" name="message" placeholder="Enter mood or topic">
-        <button type="submit">Send</button>
-    </form>
-
-    <h3>Bot Reply:</h3>
-    <p>{{ reply }}</p>
+    <h3>Welcome Student!</h3>
 
     <p>
-        Try:
-        hello,
-        exam,
-        placement,
-        project,
-        python,
-        stressed,
-        happy,
-        sad,
-        bye
+        Campus Mood Bot helps students with:
+    </p>
+
+    <ul>
+        <li> Exams</li>
+        <li> Placements</li>
+        <li> Projects</li>
+        <li> Python</li>
+        <li> Motivation</li>
+    </ul>
+
+    <hr>
+
+    <h3>Ask Your Question</h3>
+
+    <form method="POST">
+
+        <label>Enter Mood / Topic:</label>
+
+        <br><br>
+
+        <input type="text" name="message" required>
+
+        <button type="submit">Send</button>
+
+    </form>
+
+    <hr>
+
+    <h3>🤖 Bot Response</h3>
+
+    <fieldset>
+        <legend>Reply</legend>
+        <p>{{ reply }}</p>
+    </fieldset>
+
+    <hr>
+
+    <h3>Available Commands</h3>
+
+    <table border="1">
+        <tr>
+            <th>Input</th>
+            <th>Description</th>
+        </tr>
+
+        <tr>
+            <td>exam</td>
+            <td>Exam preparation tips</td>
+        </tr>
+
+        <tr>
+            <td>placement</td>
+            <td>Placement guidance</td>
+        </tr>
+
+        <tr>
+            <td>project</td>
+            <td>Project suggestions</td>
+        </tr>
+
+        <tr>
+            <td>python</td>
+            <td>Python learning tips</td>
+        </tr>
+
+        <tr>
+            <td>stressed</td>
+            <td>Stress management advice</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <p>
+        Developed by Student | Flask Mini Project
     </p>
 
 </body>
