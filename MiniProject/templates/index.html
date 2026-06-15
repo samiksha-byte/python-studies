@@ -3,90 +3,71 @@
 <head>
     <title>Campus Mood Bot</title>
 </head>
+
 <body>
 
     <h1>🎓 Campus Mood Bot</h1>
+
     <hr>
 
     <h3>Welcome Student!</h3>
 
     <p>
-        Campus Mood Bot helps students with:
+        Campus Mood Bot is your student assistant.
+        Ask questions about exams, placements, projects,
+        Python, motivation, and more.
     </p>
 
+    <hr>
+
+    <h3>Ask a Question</h3>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="message"
+            placeholder="Enter your mood or topic"
+            required
+        >
+
+        <button type="submit">
+            Send
+        </button>
+
+    </form>
+
+    <br>
+
+    <h3>🤖 Bot Reply</h3>
+
+    <p>{{ reply }}</p>
+
+    <hr>
+
+    <h3>Things You Can Ask</h3>
+
     <ul>
-        <li> Exams</li>
-        <li> Placements</li>
-        <li> Projects</li>
-        <li> Python</li>
-        <li> Motivation</li>
+        <li>hello</li>
+        <li>exam</li>
+        <li>placement</li>
+        <li>project</li>
+        <li>python</li>
+        <li>happy</li>
+        <li>sad</li>
+        <li>stressed</li>
+        <li>tired</li>
+        <li>bye</li>
     </ul>
 
     <hr>
 
-    <h3>Ask Your Question</h3>
-
-    <form method="POST">
-
-        <label>Enter Mood / Topic:</label>
-
-        <br><br>
-
-        <input type="text" name="message" required>
-
-        <button type="submit">Send</button>
-
-    </form>
-
-    <hr>
-
-    <h3>🤖 Bot Response</h3>
-
-    <fieldset>
-        <legend>Reply</legend>
-        <p>{{ reply }}</p>
-    </fieldset>
-
-    <hr>
-
-    <h3>Available Commands</h3>
-
-    <table border="1">
-        <tr>
-            <th>Input</th>
-            <th>Description</th>
-        </tr>
-
-        <tr>
-            <td>exam</td>
-            <td>Exam preparation tips</td>
-        </tr>
-
-        <tr>
-            <td>placement</td>
-            <td>Placement guidance</td>
-        </tr>
-
-        <tr>
-            <td>project</td>
-            <td>Project suggestions</td>
-        </tr>
-
-        <tr>
-            <td>python</td>
-            <td>Python learning tips</td>
-        </tr>
-
-        <tr>
-            <td>stressed</td>
-            <td>Stress management advice</td>
-        </tr>
-    </table>
-
-    <hr>
+    <h3>About This Project</h3>
 
     <p>
-        Developed by Student | Flask Mini Project
+        This project is developed using Python, Flask and HTML.
+        It demonstrates the use of functions, dictionaries,
+        user input and Flask routing.
     </p>
 
 </body>
