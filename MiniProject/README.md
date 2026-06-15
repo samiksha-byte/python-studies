@@ -1,4 +1,37 @@
-Campus Mood Bot
+# Campus Mood Bot
 
-A simple chatbot built using Python and Flask.
-It helps students with exams, placements, projects and motivation.
+## Project Description
+
+Campus Mood Bot is a simple chatbot built using Python and Flask.
+
+The chatbot helps students with:
+- Exams
+- Placements
+- Projects
+- Python Learning
+- Motivation
+
+## Technologies Used
+
+- Python
+- Flask
+- HTML
+
+## Concepts Used
+
+- Functions
+- Dictionaries
+- User Input
+- Flask Routing
+
+## Sample Inputs
+
+- hello
+- exam
+- placement
+- project
+- python
+- stressed
+- happy
+- sad
+- bye
