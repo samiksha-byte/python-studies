@@ -1,1 +1,1 @@
-Random Chat Project
+Campus Mood Bot
