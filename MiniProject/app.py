@@ -8,9 +8,16 @@ responses = {
     "placement": "Practice coding and aptitude regularly.",
     "project": "Break your project into smaller tasks.",
     "python": "Python becomes easier with practice.",
+    "java": "Java is widely used in enterprise applications.",
+    "coding": "Practice coding every day.",
+    "internship": "Build projects and improve your resume.",
+    "resume": "Keep your resume simple and updated.",
+    "library": "The library is a great place to learn.",
+    "sports": "Sports improve mental and physical health.",
     "happy": "That's great. Keep smiling.",
     "sad": "Don't worry. Better days are coming.",
     "stressed": "Take a short break and relax.",
+    "tired": "Get enough rest and stay hydrated.",
     "bye": "Goodbye. Have a nice day."
 }
 
