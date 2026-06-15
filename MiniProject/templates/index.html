@@ -2,167 +2,31 @@
 <html>
 <head>
     <title>Campus Mood Bot</title>
-
-    <style>
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body{
-            background-color:#0f172a;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            height:100vh;
-        }
-
-        .container{
-            width:700px;
-            background-color:#1e293b;
-            border-radius:15px;
-            overflow:hidden;
-            box-shadow:0px 0px 20px rgba(0,0,0,0.5);
-        }
-
-        .header{
-            background-color:#2563eb;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
-        .header h1{
-            margin-bottom:5px;
-        }
-
-        .chat-area{
-            padding:20px;
-            min-height:250px;
-            color:white;
-        }
-
-        .welcome-box{
-            background-color:#334155;
-            padding:15px;
-            border-radius:10px;
-            margin-bottom:15px;
-        }
-
-        .reply-box{
-            background-color:#14532d;
-            padding:15px;
-            border-radius:10px;
-            margin-top:15px;
-        }
-
-        .input-area{
-            background-color:#111827;
-            padding:20px;
-            text-align:center;
-        }
-
-        input[type="text"]{
-            width:75%;
-            padding:12px;
-            border:none;
-            border-radius:8px;
-        }
-
-        button{
-            padding:12px 20px;
-            background-color:#2563eb;
-            color:white;
-            border:none;
-            border-radius:8px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background-color:#1d4ed8;
-        }
-
-        .suggestions{
-            padding:15px;
-            text-align:center;
-            background-color:#0f172a;
-        }
-
-        .tag{
-            display:inline-block;
-            background-color:#475569;
-            color:white;
-            padding:8px 12px;
-            margin:5px;
-            border-radius:20px;
-        }
-
-    </style>
-
 </head>
-
 <body>
 
-<div class="container">
+    <h2>Campus Mood Bot</h2>
 
-    <div class="header">
-        <h1>🎓 Campus Mood Bot</h1>
-        <p>Your Student Support Assistant</p>
-    </div>
+    <form method="POST">
+        <input type="text" name="message" placeholder="Enter mood or topic">
+        <button type="submit">Send</button>
+    </form>
 
-    <div class="chat-area">
+    <h3>Bot Reply:</h3>
+    <p>{{ reply }}</p>
 
-        <div class="welcome-box">
-            Welcome! Ask me about:
-            Exams, Placements, Projects, Python, Stress, Motivation and more.
-        </div>
-
-        {% if reply %}
-        <div class="reply-box">
-            <strong>Bot Reply:</strong><br><br>
-            {{ reply }}
-        </div>
-        {% endif %}
-
-    </div>
-
-    <div class="input-area">
-
-        <form method="POST">
-
-            <input
-                type="text"
-                name="message"
-                placeholder="Enter your message..."
-                required
-            >
-
-            <button type="submit">
-                Send
-            </button>
-
-        </form>
-
-    </div>
-
-    <div class="suggestions">
-
-        <span class="tag">hello</span>
-        <span class="tag">exam</span>
-        <span class="tag">placement</span>
-        <span class="tag">project</span>
-        <span class="tag">python</span>
-        <span class="tag">stressed</span>
-        <span class="tag">happy</span>
-        <span class="tag">sad</span>
-        <span class="tag">bye</span>
-
-    </div>
-
-</div>
+    <p>
+        Try:
+        hello,
+        exam,
+        placement,
+        project,
+        python,
+        stressed,
+        happy,
+        sad,
+        bye
+    </p>
 
 </body>
 </html>
